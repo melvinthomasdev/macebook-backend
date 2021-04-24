@@ -1,7 +1,10 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from './config/dbConfig';
 
 @Module({
-  imports: [],
+  imports: [
+    ConfigModule.forRoot()
+  ],
   controllers: [],
   providers: [],
 })
