@@ -2,7 +2,6 @@ import {
     Entity,
     Column,
     PrimaryGeneratedColumn,
-    UpdateDateColumn,
     CreateDateColumn,
     Unique,
   } from 'typeorm';
@@ -11,10 +10,10 @@ import {
   export default class User {
     @PrimaryGeneratedColumn()
     id: number;
-  
+    
     @Column()
     uid: string;
-  
+
     @Column()
     username: string;
   
